@@ -13,8 +13,3 @@ fi
 /usr/bin/ssh-add -D
 /usr/bin/ssh-add -t ${HOURS}H $KEY
 /usr/sbin/diskutil umount force $DIR
-
-#!/usr/bin/env bash
-
-DIR=$(dirname $0)
-ssh-keygen -f $DIR/id_rsa
